@@ -39,7 +39,6 @@ It’s not a framework, it’s not “enterprise magic” — it’s just a scri
 | **npm**         | `npm run g:hex User` |
 | **yarn**        | `yarn g:hex User`    |
 | **pnpm**        | `pnpm g:hex User`    |
-| **bun**         | `bun run g:hex User` |
 
 ---
 
