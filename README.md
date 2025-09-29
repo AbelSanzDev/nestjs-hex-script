@@ -16,7 +16,8 @@ Hexagonal architecture = **keep the important stuff (your business rules) separa
            [Domain]
           /        \
 
-  [Infrastructure] [Adapters]```
+  [Infrastructure] [Adapters]
+```
 
 Why? So you can change tech (DB, REST, etc.) **without breaking your core logic**.
 Clean boundaries = less headache, less spaghetti.
