@@ -7,7 +7,8 @@ Hexagonal architecture = **keep the important stuff (your business rules) separa
 - **Presentation** → how people or apps talk to you (controllers, REST, GraphQL).
 - **Infrastructure** → all the boring stuff: databases, external APIs, files.
 
-````[Presentation]
+```
+        [Presentation]
               │
               ▼
          [Application]
@@ -79,7 +80,9 @@ So you don’t spend your time typing mkdir like a caveman.
    "scripts": {
      "g:hex": "ts-node scripts/generate-hex-module.ts"
    }
-````
+   ```
+
+```
 
 ## Which modules should use hexagonal architecture?
 
@@ -91,5 +94,6 @@ Not every module needs it. Use hexagonal **only where it makes sense**:
 
 Small utility modules or trivial CRUD modules? Don’t over-engineer. Keep them simple.
 
-Rule of thumb: **use hexagonal where complexity justifies it, not everywhere**.  
+Rule of thumb: **use hexagonal where complexity justifies it, not everywhere**.
 Less spaghetti, more sanity.
+```
