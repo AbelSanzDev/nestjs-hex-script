@@ -7,7 +7,7 @@ Hexagonal architecture = **keep the important stuff (your business rules) separa
 - **Presentation** → how people or apps talk to you (controllers, REST, GraphQL).
 - **Infrastructure** → all the boring stuff: databases, external APIs, files.
 
-        [Presentation]
+````[Presentation]
               │
               ▼
          [Application]
@@ -16,14 +16,14 @@ Hexagonal architecture = **keep the important stuff (your business rules) separa
            [Domain]
           /        \
 
-  [Infrastructure] [Adapters]
+  [Infrastructure] [Adapters]```
 
-Why? So you can change tech (DB, REST, etc.) **without breaking your core logic**.  
+Why? So you can change tech (DB, REST, etc.) **without breaking your core logic**.
 Clean boundaries = less headache, less spaghetti.
 
 # NestJS Hexagonal Module Generator
 
-I got tired of creating the same folder structure every time I wanted to write code in a proper hexagonal way.  
+I got tired of creating the same folder structure every time I wanted to write code in a proper hexagonal way.
 So I wrote a dumb script that automates the boring part.
 
 It’s not a framework, it’s not “enterprise magic” — it’s just a script that runs a couple of NestJS commands and makes some folders. Done.
@@ -78,7 +78,7 @@ So you don’t spend your time typing mkdir like a caveman.
    "scripts": {
      "g:hex": "ts-node scripts/generate-hex-module.ts"
    }
-   ```
+````
 
 ## Which modules should use hexagonal architecture?
 
