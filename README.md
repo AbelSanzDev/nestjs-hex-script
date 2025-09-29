@@ -54,6 +54,8 @@ It’s not a framework, it’s not “enterprise magic” — it’s just a scri
   - `infrastructure/entities`
 
 **Your result**
+
+```
 src/
 └── user/
 ├── application/
@@ -66,6 +68,7 @@ src/
 └── infrastructure/
 ├── adapters/
 └── entities/
+```
 
 So you don’t spend your time typing mkdir like a caveman.
 
